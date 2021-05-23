@@ -1,0 +1,195 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.Nav_Bar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    position: relative;
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+
+.Nav_Bar > .Menu {
+    position: absolute;
+    left: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.Nav_Bar > .Menu > ul > li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+.Nav_Bar > .Menu > ul > li > a {
+    color: rgb(37, 37, 37);
+    text-decoration: none;
+    transition: ease-in-out 100ms;
+    position: relative;
+}
+
+.Nav_Bar > .Menu > ul > li > a:hover {
+    color: rgb(48, 48, 48);
+}
+
+.Nav_Bar > .Menu > ul > li > a::before {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0%;
+    background-image: linear-gradient(to right, rgb(0, 117, 185) , rgb(0, 177, 221));
+    border-radius: 2px;
+    position: absolute;
+    top: 17px;
+    transition: cubic-bezier(0,1,0,1) 0.5s;
+}
+
+.Nav_Bar > .Menu > ul > li > a:hover::before {
+    width: 100%;
+}
+
+.Nav_Bar > .User {
+    position: absolute;
+    right: 40px;
+}
+
+.Nav_Bar > .User > ul > li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+.Nav_Bar > .User > ul > li > a {
+    color: rgb(37, 37, 37);
+    text-decoration: none;
+    transition: ease-in-out 100ms;
+    position: relative;
+}
+
+.Nav_Bar > .User > ul > li > a:hover {
+    color: rgb(48, 48, 48);
+}
+
+.Nav_Bar > .User > ul > li > a::before {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0%;
+    background-image: linear-gradient(to right, rgb(0, 117, 185) , rgb(0, 177, 221));
+    border-radius: 2px;
+    position: absolute;
+    top: 17px;
+    transition: cubic-bezier(0,1,0,1) 0.5s;
+}
+
+.Nav_Bar > .User > ul > li > a:hover::before {
+    width: 100%;
+}
+
+/***************************************************************************************/
+
+.Search {
+    margin: 30px;
+}
+
+.Search > button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: rgb(107, 73, 163);
+    color: rgb(255, 255, 255);
+}
+
+.Main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(/Files/Images/171850.jpg);
+    background-size: cover;
+}
+
+.Main > .Title {
+    position: absolute;
+    top: 120px;
+    text-align: center;
+}
+
+.Main > .Title > p {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: rgb(143, 143, 143);
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.Main > .Title > input {
+    width: 400px;
+    padding: 7px;
+    border-radius: 50px;
+    border: rgba(255, 255, 255, 0.048);
+}
+
+.Main > .Title > .Counters {
+    font-weight: 100px;
+    font-size: 12px;
+    color: rgb(155, 155, 155);
+    display: flex;
+    justify-content: center;
+}
+
+.Main > .Title > .Counters > .Counter {
+    margin: 15px;
+    cursor: pointer;
+    transform: translate(0, 25px);
+    transition: ease-in 75ms;
+}
+
+.Main > .Title > .Counters > .Counter:hover {
+    color: rgb(85, 121, 122);
+}
+
+.Main > .Updates {
+   position: absolute;
+   bottom: 0px;
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   justify-content: center;
+   background-image: linear-gradient( rgba(0, 0, 0, 0), rgb(0, 0, 0) );
+}
+
+.Main > .Updates > .Box {
+    width: 150px;
+    height: 120px;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.Main > .Updates > .Box > p {
+    font-size: 12px;
+    margin-top: 8px;
+    color: rgb(219, 219, 219);
+}
+
+.Main > .Updates > .Box > img {
+    width: 200px;
+    height: 130px;
+    position: absolute;
+    top: 30px;
+    object-fit: cover;
+}

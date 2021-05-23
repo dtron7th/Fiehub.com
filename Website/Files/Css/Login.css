@@ -1,0 +1,394 @@
+body {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.253);
+    display: flex;
+}
+
+.Background {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/Files/Images/1119118.jpg);
+    background-size: cover;
+    filter: blur(0px);
+    z-index: -1;
+}
+
+.Content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    background-image: linear-gradient( rgba(0, 0, 0, 0) , rgba(95, 95, 95, 0.521));
+    position: absolute;
+}
+
+.Content > .Buttons {
+    position: absolute;
+    left: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Content > .Buttons > button {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: rgba(139, 139, 139, 0.411);
+    backdrop-filter: blur (20px);
+    color: rgb(238, 238, 238);
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease 100ms;
+}
+
+.Content > .Buttons > button::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0px;
+    width: 4px;
+    height: 100%;
+    background-color: rgb(255, 174, 0);
+    transition: ease 100ms;
+}
+
+.Content > .Buttons > button:hover::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0px;
+    width: 6px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.Content > .Buttons > button:hover {
+    background-color: rgba(134, 134, 134, 0.692);
+    color: rgb(255, 255, 255);
+}
+
+.Content > .Buttons > button:active {
+    background-color: rgba(143, 143, 143, 0.445);
+    color: rgb(255, 255, 255);
+}
+
+.Content > .Backgroung_Video {
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+}
+
+.Login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(40px);
+
+}
+
+.Login > .Top_Options {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    display: flex;
+}
+
+.Login > .Top_Options > .Sign_Up {
+    position: absolute;
+    right: 0px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.Login > .Top_Options > .Sign_Up > label {
+    font-size: 12px;
+    color: rgba(221, 221, 221, 0.884);
+    margin-right: 10px;
+}
+
+.Login > .Top_Options > .Sign_Up > button {
+    margin-left: 15px;
+    width: 100px;
+    height: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.603);
+    background: none;
+    font-size: 12px;
+    color: rgba(235, 235, 235, 0.884);
+    cursor: pointer;
+    transition: ease 50ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: cubic-bezier(0,1,0,1) 1s;
+}
+
+.Login > .Top_Options > .Sign_Up > button:hover {
+    background-color: rgba(168, 168, 168, 0.527);
+    color: rgb(255, 255, 255);
+}
+
+.Login > .Top_Options > .Sign_Up > button::before {
+    width: 0px;
+    height: 00px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.075);
+    color: rgb(255, 255, 255);
+    filter: blur(2px);
+    transition: cubic-bezier(0,1,0,1) 100ms;
+}
+
+.Login > .Top_Options > .Sign_Up > button:active {
+    background-color: rgba(209, 209, 209, 0.274);
+}
+
+.Login > .Top_Options > .Close {
+    position: absolute;
+    left: 0px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.Login > .Top_Options > .Close > button {
+    margin-right: 15px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.603);
+    background: none;
+    font-size: 12px;
+    color: rgba(235, 235, 235, 0.884);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: ease 50ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: cubic-bezier(0,1,0,1) 1s;
+    
+}
+
+.Login > .Top_Options > .Close > button:hover {
+    background-color: rgba(255, 255, 255, 0.363);
+    color: rgb(255, 255, 255);
+}
+
+.Login > .Top_Options > .Close > button::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: 50%;
+    width: 0px;
+    height: 0px;
+    filter: blur(2px);
+    transition: cubic-bezier(0,1,0,1) 100ms;
+}
+
+.Login > .Top_Options > .Close > button:hover::before {
+    width: 35px;
+    height: 35px;
+}
+
+.Login > .Top_Options > .Close > button:active::before {
+    background-color: rgba(185, 184, 184, 0.11);
+}
+
+.Login > .Top_Options > .Close > label {
+    font-size: 12px;
+    color: rgba(235, 235, 235, 0.884);
+}
+
+
+.Login > .Login_Window {
+    position: absolute;
+    width: 380px;
+    height: 440px;
+    /*background-color: rgb(65, 65, 65);*/
+    border-radius: 2px;
+    backdrop-filter: blur(30px);
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    /*box-shadow: 0px 0px 10px #64646415;*/
+}
+
+.Login > .Login_Window > .Text_Fields {
+    width: 240px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    gap: 15px;
+    flex-direction: column;
+    font-size: 13px;
+    color: rgb(53, 53, 53);
+    position: relative;
+}
+
+.Login > .Login_Window > .Text_Fields > span {
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: rgba(247, 247, 247, 0.863);
+}
+
+.Login > .Login_Window > .Text_Fields > span > input {
+    width: 100%;
+    height: 40px;
+    background: none;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 11px;
+    position: absolute;
+    text-indent: 25px;
+    transition: cubic-bezier(0,1,0,1) .5s;
+    
+}
+
+.Login > .Login_Window > .Text_Fields > span > input:focus {
+    border-bottom: 2px solid rgba(187, 187, 187, 0.555);
+    background-color: rgba(177, 177, 177, 0.493);
+    margin-left: 20px;
+}
+
+.Login > .Login_Window > .Text_Fields > span > input::placeholder {
+    color: rgb(219, 219, 219);
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 11px;
+}
+
+.Login > .Login_Window > .Actions {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 80px;
+    flex-direction: column;
+}
+
+.Login > .Login_Window > .Actions > .Log_Buttons {
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.Login > .Login_Window > .Actions > .Log_Buttons > button {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: rgba(139, 139, 139, 0.411);
+    backdrop-filter: blur (20px);
+    color: rgb(238, 238, 238);
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease 50ms;
+}
+
+.Login > .Login_Window > .Actions > .Log_Buttons > button::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0px;
+    width: 4px;
+    height: 100%;
+    background-color: rgb(255, 174, 0);
+}
+
+.Login > .Login_Window > .Actions > .Log_Buttons > button:hover {
+    background-color: rgba(134, 134, 134, 0.692);
+    color: rgb(255, 255, 255);
+}
+
+.Login > .Login_Window > .Actions > .Log_Buttons > button:active {
+    background-color: rgba(143, 143, 143, 0.445);
+    color: rgb(255, 255, 255);
+}
+
+.Login > .Login_Window > .Actions > .Remember_Login {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.Login > .Login_Window > .Actions > .Remember_Login > input[type = "checkbox"] {
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    background-color: rgba(139, 139, 139, 0.411);
+    backdrop-filter: blur (20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login > .Login_Window > .Actions > .Remember_Login > input[type = "checkbox"]:checked {
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    background-color: rgba(168, 168, 168, 0.568);
+    backdrop-filter: blur (20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login > .Login_Window > .Actions > .Remember_Login > input[type = "checkbox"]::after {
+    font-family: Icons;
+    content: '\f00c';
+    color: rgba(255, 255, 255, 0.959);
+    font-size: 8px;
+    display: none;
+}
+
+.Login > .Login_Window > .Actions > .Remember_Login > input[type = "checkbox"]:checked::after{
+    display: block;
+
+}
+
+.Login > .Login_Window > .Actions > .Remember_Login > label {
+    margin-left: 10px;
+    font-size: 12px;
+    color: rgb(219, 219, 219);
+    font-weight: 500px;
+}
+
+.Login > .Login_Window > .Actions > .Remember_Login > a {
+    position: absolute;
+    right: 0px;
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(219, 219, 219);
+    font-weight: 500px;
+}
